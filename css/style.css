@@ -1,0 +1,470 @@
+/* =======================================
+            General Setting
+======================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.hr-line {
+    color: #ccc;
+    opacity: .25;
+    margin-top: 25px;
+}
+
+.m2-logo {
+    width: 25px;
+}
+
+.m2-recent-img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* =======================================
+            Top bar
+======================================= */
+.m2-topbar {
+    background-color: #000;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.m2-topbar-logo {
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+/* =======================================
+            Sidebar Left - info
+======================================= */
+.m2-sidebar {
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.m2-sidebar-header {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.m2-user-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* =======================================
+            Sidebar Left - Dashboard
+======================================= */
+.m2-sidebar-title {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.m2-nav-links {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.m2-link {
+    display: block;
+    padding: 5px 10px;
+}
+
+.m2-link:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* =======================================
+            Page Content
+======================================= */
+.m2-main {
+    margin-top: 40px;
+    margin-left: 310px;
+}
+
+.m2-section-header {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.m2-header {
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+/* =======================================
+            KPI Cards
+======================================= */
+.m2-cards-row {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    gap: 20px;
+}
+
+.m2-card {
+    width: calc(100% / 4 - 10px);
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.m2-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.m2-card-icon {
+    font-size: 30px;
+    display: inline-block;
+    transition: transform 0.6s ease;
+}
+
+.m2-card-num {
+    font-size: 30px;
+}
+
+
+.m2-crimson {
+    background-color: #dc143c;
+    color: #fff
+}
+
+.m2-dodgerblue {
+    background-color: #1e90ff;
+    color: #fff
+}
+
+.m2-teal {
+    background-color: #008080;
+    color: #fff
+}
+
+.m2-orange {
+    background-color: #d88213;
+    color: #fff
+}
+
+.m2-card:hover .m2-card-icon {
+    transform: rotate(360deg);
+}
+
+/* =======================================
+            Regions + Feeds
+======================================= */
+
+.m2-two-cols {
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.m2-card-block {
+    width: 100%;
+}
+
+.m2-card-block h3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(90, 88, 99);
+    margin-bottom: 10px;
+}
+
+.m2-region {
+    flex: 1;
+}
+
+.m2-img-full {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px rgba(193, 190, 207, 0.11) solid;
+}
+
+.m2-feed {
+    flex: 1.5;
+}
+
+.m2-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.m2-table td {
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.m2-table td:first-child {
+    width: 40px;
+    font-size: 22px;
+}
+
+.m2-table td:last-child {
+    width: 100px;
+    text-align: right;
+    font-style: italic;
+    color: #444;
+}
+
+.m2-line {
+    background-color: rgba(204, 204, 204, 0.24) !important;
+}
+
+/* =======================================
+            General Stats
+======================================= */
+.m2-stats {
+    margin: 10px 0;
+}
+
+.m2-stats h3,
+.m2-stats p {
+    color: rgb(90, 88, 99);
+    margin-bottom: 10px;
+}
+
+#m2-progress-green {
+    width: 100%;
+    height: 40px;
+    background-color: #797171;
+    border-radius: 25px;
+    margin: 15px 0;
+}
+
+#m2-progress-orange {
+    width: 100%;
+    height: 40px;
+    background-color: #797171;
+    border-radius: 25px;
+    margin: 15px 0;
+}
+
+#m2-progress-red {
+    width: 100%;
+    height: 40px;
+    background-color: #797171;
+    border-radius: 25px;
+    margin: 15px 0;
+}
+
+/* =======================================
+            Countries
+======================================= */
+#m2-countries-section {
+    margin: 15px 0;
+}
+
+.m2-bordered {
+    margin: 10px 0;
+    width: 99%;
+    border: 1px solid #ccc;
+}
+
+.m2-td {
+    font-size: 15px !important;
+}
+
+.m2-bordered tr {
+    border: 1px solid #ccc;
+}
+
+.m2-bordered tr:hover {
+    background-color: #ccc !important;
+}
+
+.m2-btn {
+    background-color: rgb(77, 73, 73);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.m2-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* =======================================
+   Recent Users
+======================================= */
+
+.m2-user-list {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.m2-user-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.m2-user-item:last-child {
+  border-bottom: none;
+}
+
+.m2-user-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.m2-user-name {
+  font-size: 18px;
+  color: #444;
+}
+
+/* =======================================
+   Recent Comments
+======================================= */
+
+.m2-comment-box {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.m2-comment-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.m2-comment-content {
+  flex: 1;
+}
+
+.m2-comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.m2-comment-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+
+.m2-comment-date {
+  color: #777;
+  font-size: 13px;
+}
+
+.m2-comment-body {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* =======================================
+   Recent Details
+======================================= */
+
+.m2-details-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: #5a5a5a;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.m2-detail-block {
+  width: 33%;
+}
+
+.m2-detail-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid;
+}
+
+/* Colored titles */
+.m2-green {
+  border-color: #3bb143;
+}
+.m2-red {
+  border-color: #d62828;
+}
+.m2-oranges {
+  border-color: orange;
+}
+
+.m2-detail-block p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* =======================================
+            Footer
+======================================= */
+
+footer {
+    margin-left: 0 !important;
+    box-sizing: inherit;
+    width: 100% !important;
+    height: 60px;
+    line-height: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    letter-spacing: 5px;
+}

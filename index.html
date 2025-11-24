@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>M2 Analytics Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="m2-body" class="m2-body">
+    <!-- Top bar -->
+    <div id="m2-topbar" class="m2-topbar">
+      <h2 id="m2-topbar-logo" class="m2-topbar-logo">
+        <img
+          id="m2-logo-small" class="m2-logo" src="img/m2-white.ico" alt="M2 Logo"/>
+        M2 Analytics Dashboard - Mohamed Mostafa
+      </h2>
+    </div>
+
+    <!-- Sidebar -->
+    <aside id="m2-sidebar" class="m2-sidebar">
+      <div id="m2-sidebar-header" class="m2-sidebar-header">
+        <img
+          id="m2-user-avatar"
+          class="m2-user-img"
+          src="img/avatar.jpg"
+          alt="avatar"
+        />
+        <div id="m2-user-info" class="m2-user-info">
+          <p id="m2-welcome" class="m2-welcome">
+            Welcome,<br />
+            <i id="m2-user-name" class="m2-user-name">Mohamed Mostafa M2</i>
+          </p>
+          <br />
+          <div id="m2-user-icons" class="m2-user-icons">
+            <a id="m2-icon-mail" class="m2-icon" href="#" aria-label="mail"
+              >📧</a
+            >
+            <a
+              id="m2-icon-profile"
+              class="m2-icon"
+              href="#"
+              aria-label="profile"
+              >👤</a
+            >
+            <a
+              id="m2-icon-settings"
+              class="m2-icon"
+              href="#"
+              aria-label="settings"
+              >⚙️</a
+            >
+          </div>
+        </div>
+        <hr id="m2-hr-line-1" class="m2-hr-line" />
+      </div>
+
+      <h4 id="m2-sidebar-title" class="m2-sidebar-title">Dashboard</h4>
+
+      <nav id="m2-nav" class="m2-nav-links" aria-label="sidebar navigation">
+        <a id="m2-link-overview" class="m2-link m2-active" href="#"
+          >👥 Overview</a
+        >
+        <a id="m2-link-views" class="m2-link" href="#">👁️ Views</a>
+        <a id="m2-link-traffic" class="m2-link" href="#">🚗 Traffic</a>
+        <a id="m2-link-geo" class="m2-link" href="#">🎯 Geo</a>
+        <a id="m2-link-orders" class="m2-link" href="#">💎 Orders</a>
+        <a id="m2-link-news" class="m2-link" href="#">🔔 News</a>
+        <a id="m2-link-general" class="m2-link" href="#">🏦 General</a>
+        <a id="m2-link-history" class="m2-link" href="#">📜 History</a>
+        <a id="m2-link-settings" class="m2-link" href="#">⚙️ Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Page Content -->
+    <main id="m2-main" class="m2-main">
+      <header id="m2-section-header" class="m2-section-header">
+        <h2 id="m2-header" class="m2-header">
+          <img id="m2-logo" class="m2-logo" src="img/m2.ico" alt="M2 Logo" /> my
+          dashboard
+        </h2>
+      </header>
+
+      <!-- KPI Cards -->
+      <section id="m2-cards-row" class="m2-cards-row">
+        <div id="m2-card-messages" class="m2-card m2-crimson">
+          <div class="m2-left">
+            <div class="m2-card-icon">💬</div>
+            <h4 class="m2-card-title">Messages</h4>
+          </div>
+          <div class="m2-card-num">175</div>
+        </div>
+
+        <div id="m2-card-views" class="m2-card m2-dodgerblue">
+          <div class="m2-left">
+            <div class="m2-card-icon">👁️</div>
+            <h4 class="m2-card-title">Views</h4>
+          </div>
+          <div class="m2-card-num">200</div>
+        </div>
+
+        <div id="m2-card-shares" class="m2-card m2-teal">
+          <div class="m2-left">
+            <div class="m2-card-icon">🔗</div>
+            <h4 class="m2-card-title">Shares</h4>
+          </div>
+          <div class="m2-card-num">123</div>
+        </div>
+
+        <div id="m2-card-users" class="m2-card m2-orange">
+          <div class="m2-left">
+            <div class="m2-card-icon">👥</div>
+            <h4 class="m2-card-title">Users</h4>
+          </div>
+          <div class="m2-card-num">150</div>
+        </div>
+      </section>
+
+      <!-- Regions + Feeds -->
+      <section id="m2-two-cols" class="m2-two-cols">
+        <!-- Left: Regions -->
+        <div id="m2-region-block" class="m2-card-block m2-region">
+          <h3 id="m2-region-title" class="m2-block-title">
+            <img
+              id="m2-region-icon"
+              class="m2-logo"
+              src="img/region.ico"
+              alt="Region Icon"
+              style="width: 20px"
+            />
+            Regions
+          </h3>
+          <img
+            id="m2-region-img"
+            class="m2-img-full"
+            src="img/region.jpg"
+            alt="Regions"
+          />
+        </div>
+
+        <!-- Right: Feeds -->
+        <div id="m2-feed-block" class="m2-card-block m2-feed">
+          <h3 id="m2-feed-title" class="m2-block-title">
+            <img
+              id="m2-feed-icon"
+              class="m2-logo"
+              src="img/feed.ico"
+              alt="Feed Icon"
+              style="width: 20px"
+            />
+            Feeds
+          </h3>
+
+          <table id="m2-feed-table" class="m2-table">
+            <tr class="m2-table-row">
+              <td class="m2-td">🧑</td>
+              <td class="m2-td">New record, over 90 views.</td>
+              <td class="m2-td">10 mins</td>
+            </tr>
+            <tr class="m2-table-row m2-line">
+              <td class="m2-td">🔔</td>
+              <td class="m2-td">Database error.</td>
+              <td class="m2-td">15 mins</td>
+            </tr>
+            <tr class="m2-table-row">
+              <td class="m2-td">👥</td>
+              <td class="m2-td">New record, over 40 users.</td>
+              <td class="m2-td">17 mins</td>
+            </tr>
+            <tr class="m2-table-row m2-line">
+              <td class="m2-td">💬</td>
+              <td class="m2-td">New comments.</td>
+              <td class="m2-td">25 mins</td>
+            </tr>
+            <tr class="m2-table-row">
+              <td class="m2-td">🔖</td>
+              <td class="m2-td">Check transactions.</td>
+              <td class="m2-td">28 mins</td>
+            </tr>
+            <tr class="m2-table-row m2-line">
+              <td class="m2-td">💻</td>
+              <td class="m2-td">CPU overload.</td>
+              <td class="m2-td">35 mins</td>
+            </tr>
+            <tr class="m2-table-row">
+              <td class="m2-td">🔗</td>
+              <td class="m2-td">New shares.</td>
+              <td class="m2-td">39 mins</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <hr id="m2-hr-line-2" class="m2-hr-line" />
+
+      <!-- Stats -->
+      <section id="m2-stats" class="m2-stats">
+        <h3 id="m2-stats-title" class="m2-block-title">General Stats</h3>
+
+        <p class="m2-stat-label">New Visitors</p>
+        <div id="m2-progress-green" class="m2-progress m2-progress-green"></div>
+
+        <p class="m2-stat-label">New Users</p>
+        <div
+          id="m2-progress-orange"
+          class="m2-progress m2-progress-orange"
+        ></div>
+
+        <p class="m2-stat-label">Bounce Rate</p>
+        <div id="m2-progress-red" class="m2-progress m2-progress-red"></div>
+      </section>
+
+      <hr id="m2-hr-line-3" class="m2-hr-line" />
+
+      <!-- Countries -->
+      <section id="m2-countries-section" class="m2-section m2-countries">
+        <h3 id="m2-countries-title" class="m2-block-title">Countries</h3>
+        <table id="m2-countries-table" class="m2-table m2-bordered">
+          <tr class="m2-table-row m2-line">
+            <td class="m2-td">United States</td>
+            <td class="m2-td">65%</td>
+          </tr>
+          <tr class="m2-table-row">
+            <td class="m2-td">UK</td>
+            <td class="m2-td">15.7%</td>
+          </tr>
+          <tr class="m2-table-row m2-line">
+            <td class="m2-td">Russia</td>
+            <td class="m2-td">5.6%</td>
+          </tr>
+          <tr class="m2-table-row">
+            <td class="m2-td">Spain</td>
+            <td class="m2-td">2.1%</td>
+          </tr>
+          <tr class="m2-table-row m2-line">
+            <td class="m2-td">India</td>
+            <td class="m2-td">1.9%</td>
+          </tr>
+          <tr class="m2-table-row">
+            <td class="m2-td">France</td>
+            <td class="m2-td">1.5%</td>
+          </tr>
+        </table>
+        <br />
+        <button id="m2-more-countries-btn" class="m2-btn" type="button">
+          More Countries →
+        </button>
+      </section>
+
+      <hr id="m2-hr-line-4" class="m2-hr-line" />
+
+<!-- Recent Users -->
+<section id="m2-recent-users-section" class="m2-section m2-recent-users">
+  <h3 class="m2-block-title">Recent Users</h3>
+
+  <ul class="m2-user-list">
+    <li class="m2-user-item">
+      <img class="m2-user-avatar" src="img/avatar1.png" alt="Eyad" />
+      <span class="m2-user-name">Eyad</span>
+    </li>
+
+    <li class="m2-user-item">
+      <img class="m2-user-avatar" src="img/avatar2.png" alt="Zyad" />
+      <span class="m2-user-name">Zyad</span>
+    </li>
+
+    <li class="m2-user-item">
+      <img class="m2-user-avatar" src="img/avatar6.png" alt="Renad" />
+      <span class="m2-user-name">Renad</span>
+    </li>
+  </ul>
+</section>
+
+<hr class="m2-hr-line" />
+
+<!-- Recent Comments -->
+<section id="m2-recent-comments-section" class="m2-section m2-recent-comments">
+  <h3 class="m2-block-title">Recent Comments</h3>
+
+  <div class="m2-comment-box">
+    <img class="m2-comment-img" src="img/avatar3.png" alt="Ryan" />
+
+    <div class="m2-comment-content">
+      <div class="m2-comment-header">
+        <span class="m2-comment-name">Ryan</span>
+        <span class="m2-comment-date">Sep 29, 2014, 9:12 PM</span>
+      </div>
+
+      <p class="m2-comment-body">
+        Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+      </p>
+    </div>
+  </div>
+
+  <div class="m2-comment-box">
+    <img class="m2-comment-img" src="img/avatar5.png" alt="Tia" />
+
+    <div class="m2-comment-content">
+      <div class="m2-comment-header">
+        <span class="m2-comment-name">Tia</span>
+        <span class="m2-comment-date">Sep 28, 2014, 10:15 PM</span>
+      </div>
+
+      <p class="m2-comment-body">
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Details -->
+<section id="m2-recent-details" class="m2-details-section">
+  <div class="m2-detail-block">
+    <h4 class="m2-detail-title m2-green">Demographic</h4>
+    <p>Language</p>
+    <p>Country</p>
+    <p>City</p>
+  </div>
+
+  <div class="m2-detail-block">
+    <h4 class="m2-detail-title m2-red">System</h4>
+    <p>Browser</p>
+    <p>OS</p>
+    <p>More</p>
+  </div>
+
+  <div class="m2-detail-block">
+    <h4 class="m2-detail-title m2-oranges">Target</h4>
+    <p>Users</p>
+    <p>Active</p>
+    <p>Interests</p>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer id="m2-footer" class="m2-footer">
+      <p class="m2-footer-text">
+        Created by <img class="m2-logo" src="img/m2.ico" alt="M2 Logo" />
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
