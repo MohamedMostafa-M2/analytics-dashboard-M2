@@ -546,3 +546,45 @@ footer {
         width: 100%;
     }
 }
+
+/* =============== TABLET RESPONSIVE (769px – 1024px) =============== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .m2-sidebar {
+        width: 230px;
+    }
+
+    .m2-main {
+        margin-left: 240px;
+    }
+
+    /* KPI cards: 2 per row */
+    .m2-cards-row {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .m2-card {
+        width: calc(50% - 10px);
+        margin-bottom: 10px;
+    }
+
+    /* Regions & feeds side by side but flexible */
+    .m2-two-cols {
+        flex-direction: column;
+    }
+
+    .m2-region,
+    .m2-feed {
+        width: 100%;
+    }
+}
+
+/* Center main content on very large screens */
+@media (min-width: 1400px) {
+    .m2-main {
+        margin-left: 320px;
+        margin-right: auto;
+    }
+}
